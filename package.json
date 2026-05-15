@@ -1,0 +1,36 @@
+{
+  "name": "@zendesignlabs/starchart-ghost",
+  "version": "0.1.0",
+  "description": "V1 publishing bridge from Starchart rendered writing HTML to Ghost posts via lossless HTML cards.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "starchart-ghost": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "ghost",
+    "starchart",
+    "publishing",
+    "html-card"
+  ],
+  "author": "Zen Design Labs",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.15"
+  }
+}
